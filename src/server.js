@@ -13,12 +13,13 @@ mongoose
   });
 
 const userRouter = require('./routes/user.route.js');
+const indexRouter = require('./routes/index.router.js');
 
 const app = express();
 const port = 3000;
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -26,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/users', userRouter);
+app.use('/', indexRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
