@@ -14,6 +14,8 @@ mongoose
 
 const userRouter = require('./routes/user.route.js');
 const indexRouter = require('./routes/index.router.js');
+const loginRouter = require('./routes/login.router.js');
+const signUpRouter = require('./routes/signUp.router.js');
 
 const app = express();
 const port = 3000;
@@ -28,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/users', userRouter);
 app.use('/', indexRouter);
+app.use('/login', loginRouter);
+app.use('/signUp', signUpRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
