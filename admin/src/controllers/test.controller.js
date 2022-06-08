@@ -1,5 +1,5 @@
 const testController = (req, res) => {
-  res.render('index');
+  res.render('index', { name: 'Da' });
 };
 
 module.exports = { testController };
