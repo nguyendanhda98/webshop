@@ -12,19 +12,17 @@ block content
                         a.nav-link.active(aria-current='page' href='/') Home
                     li.nav-item
                         a.nav-link(href='/login') Login 
-                    li.nav-item
-                        a.nav-link(href='/signUp') Sign Up
-                    li.nav-item.dropdown
-                        a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
-                        ul.dropdown-menu(aria-labelledby='navbarDropdown')
-                            li
-                                a.dropdown-item(href='#') Action
-                            li
-                                a.dropdown-item(href='#') Another action
-                            li
-                                hr.dropdown-divider
-                            li
-                                a.dropdown-item(href='#') Something else here
+li.nav-item.dropdown
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
+    ul.dropdown-menu(aria-labelledby='navbarDropdown')
+        li
+            a.dropdown-item(href='#') Action
+        li
+            a.dropdown-item(href='#') Another action
+        li
+            hr.dropdown-divider
+        li
+            a.dropdown-item(href='#') Something else here
                     li.nav-item
                         a.nav-link.disabled Disabled
                 form.d-flex(role='search')

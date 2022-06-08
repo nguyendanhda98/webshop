@@ -12,8 +12,6 @@ block content
                         a.nav-link.active(aria-current='page' href='/') Home
                     li.nav-item
                         a.nav-link(href='/login') Login 
-                    li.nav-item
-                        a.nav-link(href='/signUp') Sign Up
                     li.nav-item.dropdown
                         a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Dropdown
                         ul.dropdown-menu(aria-labelledby='navbarDropdown')
@@ -25,8 +23,4 @@ block content
                                 hr.dropdown-divider
                             li
                                 a.dropdown-item(href='#') Something else here
-                    li.nav-item
-                        a.nav-link.disabled Disabled
-                form.d-flex(role='search')
-                    input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-                    button.btn.btn-outline-success(type='submit') Search
+    block body 
