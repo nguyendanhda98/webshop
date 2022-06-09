@@ -5,7 +5,8 @@ const login = (req, res) => {
 const postLogin = (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
-  res.render('index', { name: email });
+  res.cookie('email', email);
+  res.redirect('/');
 };
 
 module.exports = { login, postLogin };

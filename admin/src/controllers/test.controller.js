@@ -1,5 +1,6 @@
 const testController = (req, res) => {
-  res.render('index', { name: 'Da' });
+  const cookie = req.cookies;
+  res.render('index', cookie);
 };
 
 module.exports = { testController };
