@@ -1,0 +1,25 @@
+extends ../index.pug
+
+block body 
+    h2 Quản lý biên tập viên
+
+    a(href="/users/create") New 
+
+    form(action="/users/search", method="GET") 
+        input(type="text", name="q")
+        button.btn.btn-primary Search 
+
+    table.table
+        thead
+            tr
+            th(scope='col') #
+            th(scope='col') Username
+            th(scope='col') Email
+            th(scope='col') Phone
+        tbody
+            each user, index in users
+                tr
+                th(scope='row')= index
+                td= user.name
+                td= user.email
+                td= user.phone

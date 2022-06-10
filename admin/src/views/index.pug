@@ -11,6 +11,8 @@ block content
                     li.nav-item
                         a.nav-link.active(aria-current='page' href='/') Home
                     if accessToken 
+                        li.nav-item
+                        a.nav-link.active(aria-current='page' href='/users') Quản lý biên tập viên
                         li.nav-item.dropdown
                             a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false') Hello Admin 
                             ul.dropdown-menu(aria-labelledby='navbarDropdown')

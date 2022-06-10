@@ -1,0 +1,10 @@
+extends ../index.pug
+
+block body 
+    h2 Thêm biên tập viên
+
+    form(action="/users/create", method="POST")
+        label(for="") Name 
+        input(type="text", name="name")
+
+        button Create

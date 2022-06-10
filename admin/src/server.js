@@ -4,6 +4,16 @@ const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const mongoose = require('mongoose');
+
+mongoose
+  .connect('mongodb://localhost:27017/webshop')
+  .then(() => {
+    console.log('Database connected');
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 const port = 4000;
 

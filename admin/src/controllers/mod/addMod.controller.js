@@ -1,5 +1,5 @@
 const add = (req, res) => {
-  res.send('addMod');
+  res.render('mod/addMod');
 };
 const postAdd = (req, res) => {
   res.send('postAdd');
