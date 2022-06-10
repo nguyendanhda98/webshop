@@ -1,6 +1,6 @@
 const logout = (req, res) => {
-  res.clearCookie('email');
-  res.render('index');
+  res.clearCookie('accessToken');
+  res.redirect('/');
 };
 
 module.exports = { logout };
